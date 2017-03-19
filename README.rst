@@ -39,8 +39,8 @@ Howto
 
 * Prepare development environment
 
-  Refer this: https://github.com/pyconjp/pyconjp-website/blob/develop/README.rst
-  NOTE: Use "runserver 0.0.0.0:8000" instead of "runserver" to allow connection from outside of VM.
+  * See this document: https://github.com/pyconjp/pyconjp-website/blob/develop/README.rst
+  * NOTE: Use "runserver 0.0.0.0:8000" instead of "runserver" to allow connection from outside of VM.
 
 
 * Connect from host web browser to internal IP of VM
