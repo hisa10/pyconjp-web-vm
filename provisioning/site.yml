@@ -1,0 +1,7 @@
+---
+- hosts: vagrants
+  become: true
+  roles:
+    - setup_centos
+    - setup_python
+    - pyconjp

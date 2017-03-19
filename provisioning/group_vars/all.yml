@@ -1,0 +1,68 @@
+---
+# Required Python version
+
+python27: 2.7.13
+python3: 3.5.3
+
+
+# PyCon JP specific vars
+
+pyconyear: 2017
+gitrepos: https://github.com/pyconjp/pyconjp-website.git
+deploydest: /opt/workspace
+pyconusr: pyconjp
+pycongrp: pyconjp
+
+
+# Required CentOS packages
+
+centos_pkg:
+  ## Packages already installed with Official CentOS Vagrant box
+  #- '@Base'
+  #- '@Core'
+  #- '@core'
+  #- bzip2
+  #- deltarpm
+  #- man-pages
+  #- nfs-utils
+  #- rsync
+  #- screen
+  #- tuned
+
+  ## Required by pycon.jp (unsure)
+  - GeoIP
+  - GeoIP-GeoLite-data
+  - GeoIP-GeoLite-data-extra
+  - autoconf
+  - automake
+  - bzip2-devel
+  - freetype-devel
+  - gdbm-devel
+  - geoipupdate
+  - gettext
+  - gettext-devel
+  - git
+  - libffi-devel
+  - libjpeg-devel
+  - libselinux-python
+  - mercurial
+  - nginx
+  - nginx-all-modules
+  - nkf
+  - npm
+  - openssl-devel
+  - postgresql-devel
+  - postgresql-server
+  - python-devel
+  - readline-devel
+  - sqlite-devel
+  - zlib-devel
+
+  ## Required by me
+  - vim-enhanced
+
+
+# Python download url (no need to change)
+
+pipurl: https://bootstrap.pypa.io/get-pip.py
+pythonurl: https://www.python.org/ftp/python/

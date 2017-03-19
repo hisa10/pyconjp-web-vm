@@ -1,0 +1,14 @@
+---
+- name: Prepare web directory
+  file:
+    dest: '{{ deploydest }}'
+    state: directory
+    owner: '{{ pyconusr }}'
+    group: '{{ pycongrp }}'
+    mode: 0755
+- name: Clone web repository
+  git:
+    repo: '{{ gitrepos }}'
+    dest: '{{ deploydest }}/pyconjp-{{ pyconyear }}'
+  become: true
+  become_user: '{{ pyconusr }}'
