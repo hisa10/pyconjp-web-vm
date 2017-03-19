@@ -16,12 +16,12 @@ Howto
 
 * Clone repository
 
-    $ git clone 
+    $ git clone https://github.com/hisa10/pyconjp-web-vm.git
 
 
 * Vagrant up
 
-    $ cd {repository_dir}
+    $ cd pyconjp-web-vm
     $ vagrant up
 
 
